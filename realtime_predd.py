@@ -4,7 +4,7 @@ import numpy as np
 import mediapipe as mp
 import tensorflow as tf
 
-MODEL_PATH = "D:/DESKTOP/Desktop/ML-project/predictor_B.keras" #path predittore
+MODEL_PATH = "D:/DESKTOP/Desktop/ML-project/model_B/predictor_B.keras" #path predittore
 IMG_W, IMG_H = 300, 200
 CLASS_NAMES = ["paper", "rock", "scissors"]
 model = tf.keras.models.load_model(MODEL_PATH)  #carico modello

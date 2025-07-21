@@ -9,7 +9,7 @@ import base64
 from streamlit_webrtc import webrtc_streamer, RTCConfiguration
 import mediapipe as mp
 
-MODEL_PATH = "D:/DESKTOP/Desktop/ML-project/predictor_B.keras"
+MODEL_PATH = "D:/DESKTOP/Desktop/ML-project/Model_B/predictor_B.keras"
 IMG_W, IMG_H = 300, 200
 CLASS_NAMES = ["paper", "rock", "scissors"]
 CONF_TH = 0.50
@@ -222,7 +222,7 @@ with right_col:
         <h2>{move_display_map.get(user_move,'–––')}</h2>
         <div class='confidence'>{f"{conf*100:.0f}%" if user_move and user_move!='uncertain' else ""}</div>
     </div>""", unsafe_allow_html=True)
-    
+
     st.markdown(f"""<div class='card-move'>
         <div class='move-label'>CPU</div>
         <h2>{move_display_map.get(cpu_move,'–––')}</h2>
